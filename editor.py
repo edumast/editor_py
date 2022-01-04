@@ -5,8 +5,10 @@ cod_definity_editor=""
 select_file_option=input("1.create  2.enter")
 select_file=input("which file?")
 if (select_file_option=="1"):
-    os.system("touch data_editor/%s" %(select_file))
-file=("data_editor/")+(select_file)
+    os.system("touch softwares/software_app/editor_py/data_editor/%s" %(select_file))
+if (select_file_option=="2"):
+    os.system("cat softwares/software_app/editor_py/data_editor/%s" %(select_file))
+file=("softwares/software_app/editor_py/data_editor/")+(select_file)
 while(enter_in_app=="editor"):
     cod_definity_editor=cod_definity_editor
     cod_editor=input("")
